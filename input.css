@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: var(--Very-Dark-Blue);
+}
+
+.card {
+  background-color: var(--Dark-Blue);
+  min-height: 415px;
+}
+
+.front {
+  display: inherit;
+}
+
+.back {
+  display: none;
+}
+
+.star-image {
+  background-color: hsl(215, 15%, 26%);
+}
+
+.details {
+  color: var(--Light-Grey);
+}
+
+.btn {
+  background-color: hsl(215, 15%, 26%);
+  color: var(--Light-Grey);
+  line-height: 60px;
+}
+
+.btn:hover {
+  background-color: var(--primary-orange);
+  color: var(--White);
+  transition: all 0.1s;
+}
+
+.btn-submit {
+  background-color: var(--primary-orange);
+  color: var(--White);
+  line-height: 36px;
+}
+
+.btn-submit:hover {
+  background-color: var(--White);
+  color: var(--primary-orange);
+}
+
+.btn.select {
+  background-color: var(--Light-Grey);
+  color: var(--White);
+}
+
+.ranking-text {
+  color: var(--primary-orange);
+  background-color: hsl(215, 15%, 26%);
+  font-weight: 400;
+}
+
+@media screen and (max-width: 525px) {
+  .card {
+    min-height: 450px;
+  }
+}
