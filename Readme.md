@@ -26,7 +26,7 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [Link](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db/hub/advice-generator-T5lUYIOrE)
+- Solution URL: [Link](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI/hub/interactive-rating-component-Skf1U62Eq)
 - Live Site URL: [Link](https://thelaucha.github.io/interactive-rating-component-FM/)
 
 ## My process
