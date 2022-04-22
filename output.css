@@ -528,20 +528,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
-.h-14 {
-  height: 3.5rem;
-}
-
 .h-12 {
   height: 3rem;
 }
 
 .h-full {
   height: 100%;
-}
-
-.w-9\/12 {
-  width: 75%;
 }
 
 .w-4 {
@@ -552,18 +544,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.w-14 {
-  width: 3.5rem;
+.w-12 {
+  width: 3rem;
 }
 
-.max-w-md {
-  max-width: 28rem;
+.w-4\/5 {
+  width: 80%;
+}
+
+.max-w-xs {
+  max-width: 20rem;
 }
 
 .max-w-fit {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .flex-col {
@@ -694,7 +694,9 @@ body {
 .btn {
   background-color: hsl(215, 15%, 26%);
   color: var(--Light-Grey);
-  line-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn:hover {
@@ -728,5 +730,24 @@ body {
 @media screen and (max-width: 525px) {
   .card {
     min-height: 450px;
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:h-14 {
+    height: 3.5rem;
+  }
+
+  .sm\:w-14 {
+    width: 3.5rem;
+  }
+
+  .sm\:max-w-sm {
+    max-width: 24rem;
+  }
+
+  .sm\:bg-slate-800 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(30 41 59 / var(--tw-bg-opacity));
   }
 }
